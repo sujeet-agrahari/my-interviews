@@ -190,6 +190,7 @@ def is_power_of_two(n):
     return n > 0 and (n & (n - 1)) == 0
 
 # Example usage
+# Subtracting 1 from a power of two flips all the bits after the single set bit (e.g., 4 is 0100, 4 - 1 is 0011)
 print(is_power_of_two(16))  # True
 print(is_power_of_two(18))  # False
 ```

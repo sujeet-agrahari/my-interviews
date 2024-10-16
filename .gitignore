@@ -1,0 +1,41 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Python compiled files
+*.pyc
+__pycache__/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Docker files
+Dockerfile
+
+# Ignore log files
+*.log
+
+# Ignore environment variables files
+.env
+
+# Ignore build directories
+dist/
+build/
+
+# Ignore coverage reports
+coverage/
+*.cover
+*.coverage
+*.cov
+*.lcov
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+*.save
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
