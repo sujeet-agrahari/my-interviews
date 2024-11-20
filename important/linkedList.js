@@ -21,4 +21,8 @@ class LinkedList {
 
 const ll = new LinkedList();
 ll.prepend(5);
+ll.prepend(6);
 console.log(ll);
+
+
+

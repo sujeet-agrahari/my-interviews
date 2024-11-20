@@ -1,3 +1,10 @@
+const isBalanced = require('./parenthesis/balanceParanthesis');
+
+console.log(isBalanced("(){}[]"));  // True
+console.log(isBalanced("([{}])"));  // True
+console.log(isBalanced("(]"));      // False
+console.log(isBalanced("({[)]"));   // False
+
 const arr = [2, 1, 1, 5];
 
 const getFirstRepeatedEle = (arr) => {
@@ -65,7 +72,7 @@ function twoPointer(arr) {
 }
 
 function sumZero(arr) {
-  for (let i = 0, j = arr.length - 1; i <= j; ) {
+  for (let i = 0, j = arr.length - 1; i <= j;) {
     const sum = arr[i] + arr[j];
     if (sum === 0) {
       return [arr[i], arr[j]];
@@ -85,7 +92,7 @@ function countUniqueValues(arr) {
   // }
   // return Object.keys(hash).filter((key) => hash[key] === 1).length;
   let i = 0;
-  for (let j = i + 1; j < arr.length; ) {
+  for (let j = i + 1; j < arr.length;) {
     if (arr[i] === arr[j]) {
       j++;
     } else {

@@ -1,7 +1,7 @@
 def target_sum_unsorted(arr, target):
     visited_num_indexes = {}
     for i in range(len(arr) - 1):
-        complement = arr[i] - target
+        complement = target - arr[i]
         if complement in visited_num_indexes:
             return [visited_num_indexes[complement], i]
         visited_num_indexes[complement] = i
