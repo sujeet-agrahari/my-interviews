@@ -180,15 +180,15 @@ abstract class Animal2 {
   }
 }
 
-class Dog extends Animal2 {
+class Dog1 extends Animal2 {
   makeSound(): void {
     console.log('Bark');
   }
 }
 
-const dog = new Dog();
-dog.makeSound(); // Bark
-dog.move(); // Moving...
+const dog1 = new Dog1();
+dog1.makeSound(); // Bark
+dog1.move(); // Moving...
 
 // q: why do we use interfaces in OOP?
 // a: Interfaces are used in OOP to define the structure of an object, ensuring that any class implementing the interface adheres to a specific contract. This promotes consistency and reusability in code.
@@ -213,6 +213,35 @@ class Rectangle implements Shape {
 const rectangle = new Rectangle(10, 20);
 console.log(rectangle.area()); // 200
 console.log(rectangle.perimeter()); // 60
+
+// q: what is polymorphism in OOP?
+// a: Polymorphism is the ability of different objects to be accessed through the same interface, allowing for different implementations of the same method. It promotes flexibility and reusability in code.
+// example of polymorphism
+interface Animal3 {
+  makeSound(): void;
+}
+
+class Dog implements Animal3 {
+  makeSound(): void {
+    console.log('Bark');
+  }
+}
+
+class Cat implements Animal3 {
+  makeSound(): void {
+    console.log('Meow');
+  }
+}
+
+function makeAnimalSound(animal3: Animal): void {
+  animal3.makeSound();
+}
+
+const dog3 = new Dog();
+const cat3 = new Cat();
+
+makeAnimalSound(dog3); // Bark
+makeAnimalSound(cat3); // Meow
 
 /**
 Interface: Cannot provide implementation for methods.
