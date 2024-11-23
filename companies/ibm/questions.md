@@ -67,3 +67,6 @@ Best Practices:
 
 5. Pull vs fetch: [StackOverflow](https://stackoverflow.com/a/58743394/9266709)
 6. Running a docker container inside another docker container. Is it possible? Give a scenario to use.
+7. git clone --depth 1 --branch main https://github.com/electron-react-boilerplate/electron-react-boilerplate.git your-project-name
+   What is shallow cloning?
+   --depth 1 will clone only the latest commit data and avoid cloning the whole history which is faster
